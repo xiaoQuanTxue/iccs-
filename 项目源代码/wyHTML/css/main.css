@@ -1,0 +1,125 @@
+.wy {
+    float: left;
+}
+
+.lujing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.p1:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: transform 0.6s;
+}
+
+.teacher {
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.miaohshu {
+    display: flex;
+    align-content: space-around;
+}
+
+.wzy {
+    display: flex;
+    justify-content: space-around;
+}
+
+.xlkc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jxhk {
+    display: flex;
+    justify-content: space-around;
+}
+
+.xktj {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mfhk {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tt1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tt2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ms1 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ms2 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ms3 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ms4 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ms5 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ms6 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bs-example-navbar-collapse-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: black;
+}
+
+#tab {
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    top: 63px;
+    right: 32px;
+    z-index: 10000;
+    cursor: pointer;
+}

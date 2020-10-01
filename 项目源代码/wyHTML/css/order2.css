@@ -1,0 +1,318 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.red {
+    color: red;
+}
+
+.orderheader {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: 20px;
+    background-color: #ffffff;
+    height: 109px;
+    width: 100%;
+    /* margin-bottom: 40px; */
+}
+
+.orderheader-box {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 1205px;
+    margin: 0 auto;
+}
+
+.orderheader-box h3 {
+    font-size: 1.17em;
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* 按钮样式 */
+
+.orderheader-title {
+    padding-top: 33px;
+    width: 100%;
+}
+
+.orderheader-buttons {
+    color: #333333;
+    width: 100%;
+}
+
+.f-fl {
+    float: left;
+}
+
+.b-30 {
+    width: 100%;
+    height: 30px;
+}
+
+.b-20 {
+    width: 100%;
+    height: 20px;
+}
+
+.b-10 {
+    width: 100%;
+    height: 10px;
+}
+
+.gray {
+    color: #999999;
+}
+
+.orderheader-buttons a {
+    text-decoration: none;
+}
+
+.butt {
+    cursor: pointer;
+    color: #333333;
+    padding-bottom: 15px;
+    margin-right: 60px;
+}
+
+.current {
+    color: #49af4f;
+    border-bottom: 4px solid #49af4f;
+}
+
+
+/*order body*/
+
+.orderbody {
+    /* margin-top: 40px; */
+    padding-top: 40px;
+    width: 100%;
+    background-color: #eee;
+    margin-bottom: 50px;
+}
+
+.orderbody-box {
+    background-color: #ffffff;
+    width: 1205px;
+    margin: 0 auto;
+}
+
+.orderbody-box-header {
+    width: 100%;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+    box-shadow: none;
+    font-size: 0;
+    background-color: #ffffff;
+}
+
+.header-item {
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 100px;
+}
+
+.first {
+    margin-right: 300px;
+}
+
+.last {
+    margin: 0;
+}
+
+.orderbody-box-contents {
+    width: 100%;
+}
+
+.content-title {
+    font-size: 12px;
+    width: 1165px;
+    padding: 20px 0 0;
+    margin: 0 auto;
+}
+
+.orderTime {
+    margin: 0 20px 0 0;
+}
+
+.content-body {
+    display: flex;
+    margin: 0 auto;
+    width: 1165px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.box-content-left {
+    border-right: 1px solid #eee;
+    width: 815px;
+    margin-right: 30px;
+    /* height: 100px; */
+}
+
+.single-order {
+    width: 100%;
+}
+
+.single-title {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.single-body {
+    display: flex;
+    margin-top: 10px;
+    height: 49px;
+    width: 100%;
+}
+
+.ordername {
+    width: 295px;
+    margin-right: 61px;
+    font-size: 14px;
+}
+
+.validTime {
+    margin-top: 9px;
+    width: 295px;
+}
+
+.c-price {
+    width: 52px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.pay-price {
+    width: 80px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.dada {
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.box-content-right {
+    width: 246px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttt {
+    margin-right: 27px;
+}
+
+.butt2 {
+    /* width: 90px;
+    height: 28px;
+    padding: 6px 12px;
+    background-color: orange; */
+    background: #49af4f;
+    border-radius: 2px;
+    color: #fff;
+    padding: 5px 17px;
+    display: block;
+    margin-top: 17px;
+    position: relative;
+    left: -17px;
+    top: -5px;
+    cursor: pointer;
+}
+
+
+/* left: -13px; */
+
+.butt1 {
+    background-color: #ff8000;
+    border-radius: 2px;
+    color: #fff;
+    padding: 5px 20px;
+    display: block;
+    margin-top: 17px;
+    position: relative;
+    left: -17px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.cancel {
+    cursor: pointer;
+    position: relative;
+    left: -3px;
+}
+
+.cancel2 {
+    cursor: pointer;
+    position: relative;
+    left: -3px;
+}
+
+
+/*为空时*/
+
+.empty-big {
+    width: 100%;
+    height: 480px;
+}
+
+.empty-content {
+    margin: 0 auto;
+    height: 480px;
+    width: 1205px;
+    background: url(//nos.netease.com/edu-image/02D494A5F7FB3DD7DF34AFB817E817B0.png?imageView&thumbnail=210z232) center 40px no-repeat;
+    padding: 260px 0 40px 0;
+}
+
+.lettle {
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    line-height: 2;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    color: #666;
+    margin: 10px auto;
+}
+
+.lettle a {
+    color: #10ae58;
+    text-decoration: none;
+}

@@ -1,0 +1,277 @@
+body {
+    background-color: #eeeeee;
+    overflow-x: hidden;
+}
+
+.detail-box {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.detail-box-content {
+    width: 1205px;
+    margin: 0 auto;
+}
+
+.titlebar {
+    width: 100%;
+}
+
+.breadcrumb {
+    background-color: #eeeeee;
+}
+
+.detail-info {
+    display: flex;
+    height: 290px;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0 20px 20px;
+}
+
+.detail-info-left {
+    width: 420px;
+}
+
+.detail-info-right {
+    width: 695px;
+    margin-left: 20px;
+}
+
+.detail-info-right-top {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 695px;
+    height: 193px;
+}
+
+.coursename {
+    font-size: 24px;
+    margin-top: 3px;
+    margin-left: 0;
+}
+
+.down-coursename {
+    display: flex;
+    font-size: 12px;
+    margin: 15px 0 0;
+    color: #999999;
+}
+
+.price {
+    font-size: 28px;
+}
+
+.page-buttons {
+    width: 1205px;
+    height: 36px;
+}
+
+.detail-info-right-bottom {
+    width: 100%;
+    height: 64px;
+}
+
+.join-button,
+.study-button,
+.nofee-watch {
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.join-button,
+.study-button {
+    background-color: #ff8000;
+    color: #ffffff;
+}
+
+.nofee-watch {
+    border: 1px solid #4AAF4F;
+    margin-left: 20px;
+    color: #4AAF4F;
+}
+
+.nofee-watch:hover {
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.join-button:hover,
+.study-button:hover {
+    color: #eeeeee;
+}
+
+.join-cart {
+    color: #4AAF4F;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.join-cart:hover {
+    color: #4aaf4f;
+}
+
+.ditail-buttons {
+    margin-top: 18px;
+}
+
+.ditail-buttons a:hover {
+    text-decoration: none;
+}
+
+.page-buttons {
+    width: 1205px;
+    height: 37px;
+    background-color: #fafafa;
+}
+
+.selected {
+    border-bottom: 3px solid #4AAF4F;
+    color: #ffffff;
+}
+
+.page-buttons span {
+    position: relative;
+    top: 12px;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.first {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.second {
+    margin-right: 60px;
+}
+
+.details-commend {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+}
+
+.details-commend-left {
+    z-index: 10;
+    width: 920px;
+    padding: 20px 20px;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.commend-people {
+    margin-bottom: 30px;
+    height: 52px;
+}
+
+p {
+    margin: 0;
+}
+
+.lecturer {
+    margin-left: 30px;
+}
+
+.commend-content {
+    margin-bottom: 80px;
+}
+
+.details-commend-right {
+    width: 265px;
+}
+
+.institution-icon {
+    width: 100%;
+    height: 149px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.intitution-name {
+    width: 265px;
+}
+
+.institution-commend {
+    padding: 14px 20px;
+    background-color: white;
+    margin-top: 1px;
+}
+
+
+/*details2*/
+
+.direction-title {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #fafafa;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    padding: 20px 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.details-direction-left {
+    z-index: 10;
+    width: 920px;
+    background-color: #ffffff;
+}
+
+.chapter-head {
+    width: 100%;
+    padding: 0 20px;
+    background-color: #fafafa;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-weight: 800;
+}
+
+.section {
+    width: 100%;
+    padding: 0 20px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.chapter-name,
+.section-name {
+    margin-left: 30px;
+}
+
+.vedioicon {
+    margin-right: 10px;
+}
+
+.section:hover {
+    background-color: #c0f1c2;
+}

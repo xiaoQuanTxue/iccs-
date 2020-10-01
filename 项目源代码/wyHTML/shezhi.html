@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>资料设置</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- layui -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/layui/layui.css" media="all">
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+</head>
+
+
+<!-- style="background-color: #eeeeee;" -->
+
+<body style="background-color: #eeeeee;">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Brand" src="img/navbrand1.png" width="127" height="29" id="brand">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navf" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程分类<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">专业</a></li>
+                    <li><a href="#">关注领福利</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <input type="text" class="form-control " id="in" aria-label="..." name="des">
+                            <button class="btn btn-default " type="submit" id="btnsec">
+								<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+							</button>
+                        </div>
+                    </div>
+
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li id="back-manage"><a href="#">管理后台</a></li>
+                    <li><a href="mystudy.html">我的学习</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+                    <li><a href="cart.html"><span class="glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    <li id="logging"><a href="login.html">登录/注册</a></li>
+                    <li>&nbsp;&nbsp;</li>
+
+
+                    <li class="aaa">
+
+                    </li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li id="touxiang">
+
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <br>
+
+
+
+    <div id="">
+
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="width: 80%;height: 1070px; margin: 0 auto;background-color: white; border:0.5px gray  solid;">
+            <ul class="layui-tab-title" style="font-size: 15px;">
+                <li class="layui-this"> &nbsp; &nbsp; &nbsp;&nbsp;资料设置 &nbsp; &nbsp; &nbsp; &nbsp;</li>
+
+                <!-- <li> &nbsp; &nbsp; &nbsp; &nbsp;收货地址管理 &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                <li> &nbsp; &nbsp; &nbsp; &nbsp;账号分配 &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                <li> &nbsp; &nbsp; &nbsp; &nbsp;邮件管理 &nbsp; &nbsp; &nbsp; &nbsp;</li> -->
+
+            </ul>
+            <div class="layui-tab-content" style="height: 100px;">
+                <div class="layui-tab-item layui-show">
+                    <br>
+                    <br>
+                    <form id="sz" action="">
+                        <h3>基本信息</h3>
+                        <br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;昵称&nbsp; &nbsp; <input type="text" id="username" name="username" style="width: 203px; height: 32px;"><br><br><br><br>
+
+                        <div class="layui-upload">
+
+
+                            <div class="layui-upload-list">
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;头像&nbsp; &nbsp;
+
+                                <img class="layui-upload-img" id="demo1" style="width: 110px; height: 110px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button type="button" class="layui-btn" id="test1" name="tx">修改头像</button><br><br><br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;性别&nbsp; &nbsp;
+                                <label class="single"><input class="sex" type="radio" name="sex"
+										value="male" />男</label>&nbsp; &nbsp; &nbsp;
+                                <label class="single"><input class="sex" type="radio" name="sex"
+										value="female" />女</label>&nbsp; &nbsp; &nbsp;
+                                <label class="single"><input class="sex" type="radio" name="sex"
+										value="secret" />保密</label><br><br><br><br> &nbsp; &nbsp; &nbsp; &nbsp; 个人介绍&nbsp; &nbsp;
+                                <input type="text" id="introduce" name="introduce" style="width: 330px;height: 100px;"><br><br><br><br>
+
+                                <h3>联系信息</h3><br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;真实姓名&nbsp;
+                                <input type="text" name="name" id="name" style="width: 203px; height: 32px;"><br><br><br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;常用邮箱&nbsp;
+                                <input type="text" name="email" id="email" style="width: 203px; height: 32px;"><br><br><br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;手机号码&nbsp;
+                                <input type="text" name="tel" id="tel" style="width: 203px; height: 32px;"><br><br><br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;QQ号码&nbsp;
+                                <input type="text" name="qq" id="qq" style="width: 203px; height: 32px;"><br><br><br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input id="tijiao" type="submit"
+                                    value="保存" style="width: 91px; height: 41px;">
+
+                                <!-- <p id="demoText"></p> -->
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="layui-tab-item">内容2</div>
+                <div class="layui-tab-item">内容3</div>
+                <div class="layui-tab-item">内容4</div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <br><br><br><br><br><br>
+
+
+    <footer class="end-footer">
+        <div class="footer-box">
+            <div class="footer-box-left">
+                <div class="footer-box-left-first m-20">
+                    <span>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。</span>
+                </div>
+                <div class="footer-box-left-second f-fl">
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=1">关于我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=2">联系我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=4">帮助中心</a></div>
+                    <div class="second-roww m-20"><a href="https://www.icourse163.org/">中国大学mooc</a></div>
+                    <div class="second-rowww m-20"><a href="https://geek.163.com/?utm_source=study.163.com&utm_medium=web_bottombanner&utm_campaign=business&utm_content=qxq20180720">网易卡撘编程</a>
+                    </div>
+                    <div class="second-row m-20"><a href="https://codecombat.163.com/">极客战记</a></div>
+                </div>
+                <div class="footer-box-left-third">
+                    <span>©1997-2020&nbsp&nbsp网易公司&nbsp &nbsp版权所有粤B2-20090191-18 &nbsp&nbsp工业和信息化部备案管理系统网站</span>
+                </div>
+            </div>
+            <div class="footter-box-right">
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo1"></a>
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo2"></a>
+                <div class="m-yktfoot_share">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/layui/layui.all.js" charset="utf-8"></script>
+    <script>
+        layui.use('element', function() {
+            var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+            //监听导航点击
+            element.on('nav(demo)', function(elem) {
+                //console.log(elem)
+                layer.msg(elem.text());
+            });
+        });
+    </script>
+
+    <script>
+        layui.use('upload', function() {
+            var $ = layui.jquery,
+                upload = layui.upload;
+
+            //普通图片上传
+            var uploadInst = upload.render({
+                elem: '#test1',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                before: function(obj) {
+                    //预读本地文件示例，不支持ie8
+                    obj.preview(function(index, file, result) {
+                        $('#demo1').attr('src', result); //图片链接（base64）
+                    });
+                },
+                done: function(res) {
+                    //如果上传失败
+                    if (res.code > 0) {
+                        return layer.msg('上传失败');
+                    }
+                    //上传成功
+                },
+                error: function() {
+                    //演示失败状态，并实现重传
+                    var demoText = $('#demoText');
+                    demoText.html(
+                        '<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>'
+                    );
+                    demoText.find('.demo-reload').on('click', function() {
+                        uploadInst.upload();
+                    });
+                }
+            });
+
+            //多图片上传
+            upload.render({
+                elem: '#test2',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                multiple: true,
+                before: function(obj) {
+                    //预读本地文件示例，不支持ie8
+                    obj.preview(function(index, file, result) {
+                        $('#demo2').append('<img src="' + result + '" alt="' + file.name +
+                            '" class="layui-upload-img">')
+                    });
+                },
+                done: function(res) {
+                    //上传完毕
+                }
+            });
+
+            //指定允许上传的文件类型
+            upload.render({
+                elem: '#test3',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                accept: 'file' //普通文件
+                    ,
+                done: function(res) {
+                    layer.msg('上传成功');
+                    console.log(res);
+                }
+            });
+            upload.render({ //允许上传的文件后缀
+                elem: '#test4',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                accept: 'file' //普通文件
+                    ,
+                exts: 'zip|rar|7z' //只允许上传压缩文件
+                    ,
+                done: function(res) {
+                    layer.msg('上传成功');
+                    console.log(res)
+                }
+            });
+            upload.render({
+                elem: '#test5',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                accept: 'video' //视频
+                    ,
+                done: function(res) {
+                    layer.msg('上传成功');
+                    console.log(res)
+                }
+            });
+            upload.render({
+                elem: '#test6',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                accept: 'audio' //音频
+                    ,
+                done: function(res) {
+                    layer.msg('上传成功');
+                    console.log(res)
+                }
+            });
+
+            //设定文件大小限制
+            upload.render({
+                elem: '#test7',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                size: 60 //限制文件大小，单位 KB
+                    ,
+                done: function(res) {
+                    layer.msg('上传成功');
+                    console.log(res)
+                }
+            });
+
+            //同时绑定多个元素，并将属性设定在元素上
+            upload.render({
+                elem: '.demoMore',
+                before: function() {
+                    layer.tips('接口地址：' + this.url, this.item, {
+                        tips: 1
+                    });
+                },
+                done: function(res, index, upload) {
+                    var item = this.item;
+                    console.log(item); //获取当前触发上传的元素，layui 2.1.0 新增
+                }
+            })
+
+            //选完文件后不自动上传
+            upload.render({
+                elem: '#test8',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                auto: false
+                    //,multiple: true
+                    ,
+                bindAction: '#test9',
+                done: function(res) {
+                    layer.msg('上传成功');
+                    console.log(res)
+                }
+            });
+
+            //拖拽上传
+            upload.render({
+                elem: '#test10',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                done: function(res) {
+                    layer.msg('上传成功');
+                    layui.$('#uploadDemoView').removeClass('layui-hide').find('img').attr('src', res.files
+                        .file);
+                    console.log(res)
+                }
+            });
+
+            //多文件列表示例
+            var demoListView = $('#demoList'),
+                uploadListIns = upload.render({
+                    elem: '#testList',
+                    url: 'https://httpbin.org/post' //改成您自己的上传接口
+                        ,
+                    accept: 'file',
+                    multiple: true,
+                    auto: false,
+                    bindAction: '#testListAction',
+                    choose: function(obj) {
+                        var files = this.files = obj.pushFile(); //将每次选择的文件追加到文件队列
+                        //读取本地文件
+                        obj.preview(function(index, file, result) {
+                            var tr = $(['<tr id="upload-' + index + '">', '<td>' + file.name +
+                                '</td>', '<td>' + (file.size / 1024).toFixed(1) + 'kb</td>',
+                                '<td>等待上传</td>', '<td>',
+                                '<button class="layui-btn layui-btn-xs demo-reload layui-hide">重传</button>',
+                                '<button class="layui-btn layui-btn-xs layui-btn-danger demo-delete">删除</button>',
+                                '</td>', '</tr>'
+                            ].join(''));
+
+                            //单个重传
+                            tr.find('.demo-reload').on('click', function() {
+                                obj.upload(index, file);
+                            });
+
+                            //删除
+                            tr.find('.demo-delete').on('click', function() {
+                                delete files[index]; //删除对应的文件
+                                tr.remove();
+                                uploadListIns.config.elem.next()[0].value =
+                                    ''; //清空 input file 值，以免删除后出现同名文件不可选
+                            });
+
+                            demoListView.append(tr);
+                        });
+                    },
+                    done: function(res, index, upload) {
+                        if (res.files.file) { //上传成功
+                            var tr = demoListView.find('tr#upload-' + index),
+                                tds = tr.children();
+                            tds.eq(2).html('<span style="color: #5FB878;">上传成功</span>');
+                            tds.eq(3).html(''); //清空操作
+                            return delete this.files[index]; //删除文件队列已经上传成功的文件
+                        }
+                        this.error(index, upload);
+                    },
+                    error: function(index, upload) {
+                        var tr = demoListView.find('tr#upload-' + index),
+                            tds = tr.children();
+                        tds.eq(2).html('<span style="color: #FF5722;">上传失败</span>');
+                        tds.eq(3).find('.demo-reload').removeClass('layui-hide'); //显示重传
+                    }
+                });
+
+            //绑定原始文件域
+            upload.render({
+                elem: '#test20',
+                url: 'https://httpbin.org/post' //改成您自己的上传接口
+                    ,
+                done: function(res) {
+                    layer.msg('上传成功');
+                    console.log(res)
+                }
+            });
+
+        });
+    </script>
+
+
+
+    <script>
+        $("#tijiao").click(function(e) {
+            alert($("#email").val());
+            e.preventDefault();
+            $.ajax({
+                url: "http://localhost:8080/user/shezi",
+                type: "post",
+
+                data: {
+                    "username": $("#username").val(),
+                    "introduce": $("#introduce").val(),
+                    "email": $("#email").val(),
+                    "tel": $("#tel").val(),
+                    "sex": $(".sex").val(),
+                    "truename": $("#name").val(),
+                    "qq": $("#qq").val(),
+                    "userid": $.cookie('userid'),
+                },
+                datatype: "json",
+                success: function() {
+                    alert("设置成功");
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

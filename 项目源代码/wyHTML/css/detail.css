@@ -1,0 +1,248 @@
+/* 
+.courseheadall {
+	margin: 0 auto;
+} */
+
+.coursehead {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.coursehead-left {
+    float: left;
+    width: 40%;
+    height: 250px;
+    padding: 20px 20px;
+}
+
+.coursehead-right {
+    float: right;
+    width: 60%;
+    height: 200px;
+}
+
+.h-right-right {
+    float: right;
+}
+
+.btnarea {
+    width: 200px;
+    height: 100px;
+    margin: 100px auto;
+    float: left;
+}
+
+.btnarea-left {
+    float: left;
+}
+
+.btnarea-right {
+    float: right;
+}
+
+.courseheadbtn {
+    height: 50px;
+    border: 1px solid;
+    border-color: aliceblue;
+    padding: 16px 16px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+
+#courselist li {
+    float: left;
+    list-style: none;
+}
+
+#courselist a {
+    text-decoration: none;
+}
+
+#courselist a:hover {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.coursebody {
+    width: 100%;
+    height: 5750px;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+}
+
+.coursebodyleft {
+    width: 70%;
+    float: left;
+    padding: 50px 50px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.coursebodyright {
+    width: 29%;
+    float: right;
+}
+
+.coursebodyright-first {
+    height: 300px;
+    padding: 30px 30px;
+    /* width: 28%; */
+    /* float: right; */
+    background-color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.coursebodyright-second {
+    height: 300px;
+    padding: 30px 30px;
+    height: 250px;
+    /* width: 28%; */
+    /* float: right; */
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.coursebodyright-third {
+    height: 300px;
+    padding: 30px 30px;
+    height: 200px;
+    /* width: 28%; */
+    /* float: right; */
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.coursebodyright-forth {
+    padding: 30px 30px;
+    height: 800px;
+    /* width: 28%; */
+    /* float: right; */
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.forth-one-left {
+    float: left;
+    padding: 5px 5px;
+}
+
+.forth-one-zhong {
+    float: left;
+    padding: 0.5px 5px;
+}
+
+.forth-one-right {
+    float: right;
+}
+
+.coursebodyright-fifth {
+    height: 380px;
+    padding: 30px 30px;
+    /* width: 28%; */
+    /* float: right; */
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.videoandtext {
+    background-color: green;
+    padding: 1px 1px;
+    color: white;
+    border-radius: 2px;
+}
+
+.coursebodyleft-first {
+    width: 100%;
+    height: 30px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 7px 0px;
+    font-size: 16px;
+}
+
+.coursebodyleft-select {
+    width: 100%;
+    height: 40px;
+    padding: 10px 0px;
+    color: #000000;
+}
+
+.coursebodyleft-section111 a {
+    color: #000000;
+}
+
+.coursebodyleft-section111 a:hover {
+    text-decoration: none;
+}
+
+.coursebodyleft-select:hover {
+    background-color: linen;
+    text-decoration: none;
+}
+
+.coursebodyleft-select-right {
+    float: right;
+}
+
+.coursebody1 {
+    width: 100%;
+    height: 3500px;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+}
+
+.allcoursetext {
+    background-color: green;
+    color: white;
+}
+
+.coursebodyleft-one {
+    height: 200px;
+    padding: 10px 10px;
+}
+
+.coursebodyleft-one-left {
+    float: left;
+    width: 100px;
+}
+
+.coursebodyleft-one-right {
+    float: right;
+    width: 86%;
+}
+
+.left-one-right1-left {
+    float: left;
+}
+
+.left-one-right1-right {
+    float: right;
+}
+
+.left-one-right22 {
+    float: right;
+}
+
+.coursebody2 {
+    width: 100%;
+    height: 2200px;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+}
+
+.coursebodyleft-one-shangaaa {
+    float: right;
+}
+
+.coursebodyleft-one-xia {
+    float: right;
+}
+
+.coursebody3 {
+    width: 100%;
+    height: 1260px;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>网易云课堂</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/app/header.css">
+    <link rel="stylesheet" href="css/app/header_banner.css">
+    <link rel="stylesheet" href="css/app/right_sidebar.css">
+    <link rel="stylesheet" href="css/app/index.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+    <!-- layui -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/layui/layui.css" media="all">
+
+    <!-- top -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+
+
+
+    <style>
+        /*改动固定标题栏 2020年6月22日14:44:03
+        .cc .header-main
+        */
+        
+        .cc {
+            background-color: white;
+        }
+        
+        .header-main {
+            margin-top: 170px;
+        }
+        
+        .ulll {
+            /* display: inline-block; */
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body onload="a()">
+
+    <!--  -->
+    <table style="font-size: 12px; width: 142px;display: none; " class="table" id="tab">
+        <tr>
+            <td><b>正在使用网易账号登录</b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="shezhi.html">设置</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="order.html">我的订单</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a id="zhuxiao">注销</a>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- <nav class=" navbar navbar-default"> -->
+    <div class="container-fluid  navbar-fixed-top cc">
+        <div class="navbar-header">
+            <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button> -->
+            <a class="navbar-brand" href="index.html">
+                <img alt="Brand" src="images/navbrand2.png" width="188px" height="55px">
+            </a>
+        </div>
+
+
+        <div>
+            <div>
+                <form onsubmit="return false" style="width: 500px;display: inline-block;margin-left: 100px;" action="http://localhost:8080/getcou" method="get">
+
+                    <div class="input-group" style="padding-top: 20px;padding-left: 10px;">
+                        <div class="input-group-btn">
+                            <input type="text" required="required" class="form-control " id="search" placeholder="请输入要搜索的内容" name="des">
+                            <button class="btn btn-default" type="submit" id="btnsec">Go!</button>
+                        </div>
+                    </div>
+                </form>
+
+
+
+
+
+                <ul class="nav navbar-nav navbar-right ulll">
+
+
+
+
+                    <li><a href="mystudy.html">我的学习</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                    </li>
+                    <li><a href="/cart.html"><span class="glyphicon glyphicon glyphicon-shopping-cart"
+								aria-hidden="true"></span></a>
+                    </li>
+                    <li>&nbsp;&nbsp;</li>
+
+
+                    <li class="aaa">
+
+                    </li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li id="touxiang">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <br><br>
+
+
+
+        <!-- <div class="layui-tab" style="display: inline-block;" >
+				<ul class="layui-tab-title">
+				<li class="layui-this">首页</li>
+				<li>微专业</li>
+			
+				</ul>
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							课程详情
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</div>
+
+			<div class="layui-tab-content">
+				<div class="layui-tab-item layui-show">
+
+				</div>
+
+				<div class="layui-tab-item">
+
+				</div>
+
+				<div class="layui-tab-item">
+
+				</div>
+
+			</div> -->
+
+
+
+        <ul class="layui-nav layui-bg-green" style="background-color: white !important; ">
+            <li class="layui-nav-item layui-this"><a style="color: black;">首页</a></li>
+            <li class="layui-nav-item">
+                <a style="color: black;">课程方案</a>
+                <dl class="layui-nav-child" style="line-height: 15px;">
+                    <dd><a href="">职场提升</a></dd>
+                    <dd><a href="">编程与开发</a></dd>
+                    <dd><a href="">AI数据科学</a></dd>
+                    <dd><a href="">产品与运营</a></dd>
+                    <dd><a href="">设计创意</a></dd>
+                    <dd><a href="">电商运营</a></dd>
+                    <dd><a href="">语言学习</a></dd>
+                    <dd><a href="">职业考试</a></dd>
+                    <dd><a href="">生活兴趣</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a style="color: black;">关注领福利</a>
+                <dl class="layui-nav-child" style="line-height: 15px;">
+                    <dd><img src="images/关注领福利.png"></dd>
+                </dl>
+            </li>
+
+            <li class="layui-nav-item"><a style="color: black;">下载APP</a>
+                <dl class="layui-nav-child" style="line-height: 15px;">
+                    <dd><img src="images/下载app.png"></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item "><a style="color: black;">微专业</a></li>
+            <li class="layui-nav-item"><a style="color: black;">会员中心</a></li>
+        </ul>
+
+
+    </div>
+
+    <div class="header-main">
+        <div class="nav">
+            <div class="main-content u-nav">
+                <div class="nav-list">
+
+                    <ul class="navlist-ul" id="top_nav">
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ufenqi-banner" style="margin-top: -75px;">
+
+            <!-- 轮播图 -->
+            <div class="u-banner" width: 100%;>
+                <ul class="bxslider banner-list" style="z-index:1; ">
+
+                </ul>
+                <ol class="slider">
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- </div> -->
+    <!-- end header -->
+
+    <div>
+
+        <h3> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;系统化学习路径 </h3>
+
+    </div>
+
+    <br>
+
+    <!-- content -->
+    <div class="main-content" id="index_container">
+
+        <div class="lujing">
+            <!-- 						<img src="images/aa/路径图1.png" width="180px" height="120px">
+						<img src="images/aa/路径图2.png" width="180px" height="120px">
+						<img src="images/aa/路径图3.png" width="180px" height="120px">
+						<img src="images/aa/路径图4.png" width="180px" height="120px">
+						<img src="images/aa/路径图5.png" width="180px" height="120px"> -->
+        </div>
+
+
+        <br> <br>
+
+        <h3>课堂直播</h3>
+
+        <br>
+
+        <div class="teachers">
+
+            <div class="tt1">
+
+
+            </div>
+
+
+            <br />
+            <br />
+            <br />
+
+            <div class="tt2">
+
+                <!-- <div class="teacher">
+						<div class="teacher_img">
+							<img src="images/aa/教师6.jpg">
+						</div>
+
+						<div class="miaoshu">
+
+							<div class="mioashu1">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天 20:00 | <a
+									style="color: green;">开启提醒</a>
+
+							</div>
+
+							<div class="mioashu2">
+								<h4>用Python做股票指标分析</h4>
+
+							</div>
+
+							<div class="mioashu3">
+								&nbsp;&nbsp;&nbsp;&nbsp;王冕 资深大数据架构工程师
+							</div>
+
+						</div>
+					</div> -->
+            </div>
+        </div>
+
+
+        <br> <br>
+
+        <h3>微专业</h3>
+
+        <br>
+
+        <div>
+            <div class="wzy">
+                <!-- <div>
+								<img class="p1" src="images/aa/微专业1.webp">
+
+								<h4>大数据开发工程师</h4>
+								实战网易大数据项目，掌握大数据核心技巧
+							</div>
+							 -->
+
+            </div>
+
+        </div>
+
+
+        <br> <br>
+
+        <h3>限时秒杀</h3>
+
+        <br>
+
+        <div class="layui-tab">
+            <ul class="layui-tab-title">
+                <li class="layui-this">今天 10:00开抢</li>
+                <li>今天 14:00开抢</li>
+                <li>今天 20:00开抢</li>
+                <li>明天 10:00开抢</li>
+                <li>明天 14:00开抢</li>
+                <li>明天 20:00开抢</li>
+            </ul>
+
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+
+                    <div class="ms1">
+                        <!-- <img src="images/miaosha/ms1-1.png" />
+									 -->
+
+                    </div>
+
+                </div>
+
+                <div class="layui-tab-item">
+                    <div class="ms2">
+                        <!-- <img src="images/miaosha/ms6.png" /> -->
+                    </div>
+                </div>
+
+                <div class="layui-tab-item">
+                    <div class="ms3">
+                        <!-- <img src="images/miaosha/ms7.png" /> -->
+                    </div>
+                </div>
+
+                <div class="layui-tab-item">
+                    <div class="ms4">
+                        <!-- <img src="images/miaosha/ms8.png" /> -->
+                    </div>
+                </div>
+
+                <div class="layui-tab-item">
+                    <div class="ms5">
+                        <!-- <img src="images/miaosha/ms9.png" /> -->
+                    </div>
+                </div>
+
+                <div class="layui-tab-item">
+                    <div class="ms6">
+                        <!-- <img src="images/miaosha/ms10.png" /> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br> <br>
+
+        <h3>系列课程</h3>
+
+        <br>
+
+        <div>
+            <div class="xlkc">
+                <!-- 	<div>
+								<img class="p1" src="images/xlkc/系列课程1.webp">
+							 -->
+
+            </div>
+
+        </div>
+
+
+        <br> <br>
+
+        <h3>精选好课</h3>
+
+        <br>
+
+        <div>
+            <div class="jxhk">
+                <!-- <div>
+								<img class="p1" src="images/jxhk/精选好课1.webp">
+								<br />
+								<h4>跟橘子学PS</h4>
+								云课堂行家精品课，PS入门必备
+							</div>
+ 						-->
+            </div>
+
+        </div>
+
+
+        <br> <br>
+
+        <h3>新课推荐</h3>
+
+        <br>
+
+        <div>
+            <div class="xktj">
+                <!-- <div>
+								<img class="p1" src="images/xktj/新课推荐.webp">
+								<br />
+								<h4>Excel实战训练营</h4>
+								专属社群 全场陪伴
+							</div>
+							<div>  -->
+
+            </div>
+
+        </div>
+
+
+
+        <br> <br>
+        <h3>免费好课</h3>
+
+        <br>
+
+        <div>
+            <div class="mfhk">
+
+                <!-- <div>
+								<img class="p1" src="images/mfhk5/免费好课.webp">
+								<br />
+								<h4>小白理财入门</h4>
+								从入门到进阶
+							</div> -->
+
+            </div>
+
+        </div>
+
+        <br />
+        <br /><br />
+        <br />
+
+        <!--友情链接-->
+        <!-- <section class="u-link">
+            <div class="uLink-box" style="background-color: wheat height= 217px;">
+                <p class="font3 font-size5">
+                    <span>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。</span>
+                </p>
+                <ul class="link-list">
+                    <li><a href="#" target="_blank" class="borderLeft">关于我们</a></li>
+                    <li><a href="#" target="_blank">联系我们</a></li>
+                    <li><a href="#" target="_blank">帮助中心</a></li>
+                    <li><a href="#" target="_blank">中国大学Mooc</a></li>
+                    <li><a href="#" target="_blank">网易卡搭编程</a></li>
+                    <li><a href="#" target="_blank">极客战纪</a></li>
+
+                    <br><br><br> ©1997-2020 网易公司 版权所有粤B2-20090191-18 工业和信息化部备案管理系统网站
+                </ul>
+
+                <br />
+                <br>
+                <br>
+                <br><br><br><br><br><br><br>
+            </div>
+        </section> -->
+    </div>
+    <!--改动footer-->
+    <footer class="end-footer">
+        <div class="footer-box">
+            <div class="footer-box-left">
+                <div class="footer-box-left-first m-20">
+                    <span>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。</span>
+                </div>
+                <div class="footer-box-left-second f-fl">
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=1">关于我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=2">联系我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=4">帮助中心</a></div>
+                    <div class="second-roww m-20"><a href="https://www.icourse163.org/">中国大学mooc</a></div>
+                    <div class="second-rowww m-20"><a href="https://geek.163.com/?utm_source=study.163.com&utm_medium=web_bottombanner&utm_campaign=business&utm_content=qxq20180720">网易卡撘编程</a></div>
+                    <div class="second-row m-20"><a href="https://codecombat.163.com/">极客战记</a></div>
+                </div>
+                <div class="footer-box-left-third">
+                    <span>©1997-2020&nbsp&nbsp网易公司&nbsp &nbsp版权所有粤B2-20090191-18 &nbsp&nbsp工业和信息化部备案管理系统网站</span>
+                </div>
+            </div>
+            <div class="footter-box-right">
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo1"></a>
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo2"></a>
+                <div class="m-yktfoot_share">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+    <script src="js/layui/layui.all.js" charset="utf-8"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+        layui.use('element', function() {
+            var $ = layui.jquery,
+                element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+            //触发事件
+            var active = {
+                tabAdd: function() {
+                    //新增一个Tab项
+                    element.tabAdd('demo', {
+                        title: '新选项' + (Math.random() * 1000 | 0) //用于演示
+                            ,
+                        content: '内容' + (Math.random() * 1000 | 0),
+                        id: new Date().getTime() //实际使用一般是规定好的id，这里以时间戳模拟下
+                    })
+                },
+                tabDelete: function(othis) {
+                    //删除指定Tab项
+                    element.tabDelete('demo', '44'); //删除：“商品管理”
+
+
+                    othis.addClass('layui-btn-disabled');
+                },
+                tabChange: function() {
+                    //切换到指定Tab项
+                    element.tabChange('demo', '22'); //切换到：用户管理
+                }
+            };
+
+            $('.site-demo-active').on('click', function() {
+                var othis = $(this),
+                    type = othis.data('type');
+                active[type] ? active[type].call(this, othis) : '';
+            });
+
+            //Hash地址的定位
+            var layid = location.hash.replace(/^#test=/, '');
+            element.tabChange('test', layid);
+
+            element.on('tab(test)', function(elem) {
+                location.hash = 'test=' + $(this).attr('lay-id');
+            });
+
+        });
+
+
+        // 跨域访问  加载课程方向
+        $.ajax({
+            url: "http://localhost:8080/getdirection",
+            success: function(dirs) {
+
+                var li = '';
+                // 遍历数组
+                for (var i = 0; i < dirs.length; i++) {
+                    var dname = dirs[i];
+
+                    li +=
+                        '<li><div class="navlist-li-cover" data-navid="1"><a href="##" class="navlist-li-a" target="_blank">' +
+                        dname + '</a></div></li>';
+                }
+                // 将li添加到ul中
+                $("ul[class='navlist-ul']").append(li);
+            }
+        });
+
+        $.ajax({
+            url: "http://localhost:8080/getimg",
+            data: "title=轮播图",
+            success: function(imgs) {
+
+                var li = '';
+                for (var i = 0; i < imgs.length; i++) {
+                    var picture = imgs[i];
+                    li +=
+                        '<li style="background:#00deff;" class="active"><a href="" target="_blank" class="main-content" title=""><img src="' +
+                        picture + '"style="width: 100%;"></a></li>';
+                }
+                $("ul[class='bxslider banner-list']").append(li);
+            }
+        });
+
+        $.ajax({
+            url: "http://localhost:8080/getimg",
+            data: "title=系统化学习路径",
+            success: function(imgs) {
+
+                var li = '';
+                for (var i = 0; i < imgs.length; i++) {
+                    var picture = imgs[i];
+
+                    li += '<img src="' + picture + '" width="180px" height="120px">';
+                }
+                $("div[class='lujing']").append(li);
+            }
+        });
+
+        $.ajax({
+            url: "http://localhost:8080/getpic",
+            data: "title=微专业",
+            success: function(pic) {
+
+                var li = '';
+                for (var i = 0; i < pic.length; i++) {
+                    var picture = pic[i];
+
+                    li += '<div><img class="p1" src="' + picture.picture + '"><h4>' + picture.des1 + '</h4>' +
+                        picture.des2 +
+                        '</div>';
+                }
+                $("div[class='wzy']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getimg",
+            data: "title=限时秒杀1",
+            success: function(imgs) {
+
+                var li = '';
+                for (var i = 0; i < imgs.length; i++) {
+                    var picture = imgs[i];
+
+                    li += '<img src="' + picture + '">';
+                }
+                $("div[class='ms1']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getimg",
+            data: "title=限时秒杀2",
+            success: function(imgs) {
+
+                var li = '';
+                for (var i = 0; i < imgs.length; i++) {
+                    var picture = imgs[i];
+
+                    li += '<img src="' + picture + '">';
+                }
+                $("div[class='ms2']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getimg",
+            data: "title=限时秒杀3",
+            success: function(imgs) {
+
+                var li = '';
+                for (var i = 0; i < imgs.length; i++) {
+                    var picture = imgs[i];
+
+                    li += '<img src="' + picture + '">';
+                }
+                $("div[class='ms3']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getimg",
+            data: "title=限时秒杀4",
+            success: function(imgs) {
+
+                var li = '';
+                for (var i = 0; i < imgs.length; i++) {
+                    var picture = imgs[i];
+
+                    li += '<img src="' + picture + '">';
+                }
+                $("div[class='ms4']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getimg",
+            data: "title=限时秒杀5",
+            success: function(imgs) {
+
+                var li = '';
+                for (var i = 0; i < imgs.length; i++) {
+                    var picture = imgs[i];
+
+                    li += '<img src="' + picture + '">';
+                }
+                $("div[class='ms5']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getimg",
+            data: "title=限时秒杀6",
+            success: function(imgs) {
+
+                var li = '';
+                for (var i = 0; i < imgs.length; i++) {
+                    var picture = imgs[i];
+
+                    li += '<img src="' + picture + '">';
+                }
+                $("div[class='ms6']").append(li);
+            }
+        });
+
+        $.ajax({
+            url: "http://localhost:8080/getpic",
+            data: "title=精选好课",
+            success: function(pic) {
+
+                var li = '';
+                for (var i = 0; i < pic.length; i++) {
+                    var picture = pic[i];
+
+                    li += '<div><img class="p1" data-courseid="' + picture.pictureid + '" src="' + picture.picture + '"><h4>' + picture.des1 + '</h4>' +
+                        picture.des2 +
+                        '</div>';
+                }
+                $("div[class='jxhk']").append(li);
+            }
+        });
+
+        $.ajax({
+            url: "http://localhost:8080/getpic",
+            data: "title=系列课程",
+            success: function(pic) {
+
+                var li = '';
+                for (var i = 0; i < pic.length; i++) {
+                    var picture = pic[i];
+
+                    li += '<div><img class="p1" src="' + picture.picture + '"><h4>' + picture.des1 + '</h4>' +
+                        picture.des2 +
+                        '</div>';
+                }
+                $("div[class='xlkc']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getpic",
+            data: "title=新课推荐",
+            success: function(pic) {
+
+                var li = '';
+                for (var i = 0; i < pic.length; i++) {
+                    var picture = pic[i];
+
+                    li += '<div><img class="p1" src="' + picture.picture + '"><h4>' + picture.des1 + '</h4>' +
+                        picture.des2 +
+                        '</div>';
+                }
+                $("div[class='xktj']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getpic",
+            data: "title=免费好课",
+            success: function(pic) {
+
+                var li = '';
+                for (var i = 0; i < pic.length; i++) {
+                    var picture = pic[i];
+
+                    li += '<div><img class="p1" src="' + picture.picture + '"><h4>' + picture.des1 + '</h4>' +
+                        picture.des2 +
+                        '</div>';
+                }
+                $("div[class='mfhk']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getpic",
+            data: "title=课堂直播1",
+            success: function(pic) {
+
+                var li = '';
+                for (var i = 0; i < pic.length; i++) {
+                    var picture = pic[i];
+
+                    li += '<div class="teacher"><div class="teacher_img"><img src="' + picture.picture +
+                        '"></div><div class="miaoshu"><div class="mioashu1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天 20:00 | <a style="color: green;">开启提醒</a></div><div class="mioashu2"><h4>' +
+                        picture.des1 + '</h4></div><div class="mioashu3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + picture
+                        .des2 +
+                        '</div></div></div>';
+                }
+                $("div[class='tt1']").append(li);
+            }
+        });
+
+
+        $.ajax({
+            url: "http://localhost:8080/getpic",
+            data: "title=课堂直播2",
+            success: function(pic) {
+
+                var li = '';
+                for (var i = 0; i < pic.length; i++) {
+                    var picture = pic[i];
+
+                    li += '<div class="teacher"><div class="teacher_img"><img src="' + picture.picture +
+                        '"></div><div class="miaoshu"><div class="mioashu1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天 20:00 | <a style="color: green;">开启提醒</a></div><div class="mioashu2"><h4>' +
+                        picture.des1 + '</h4></div><div class="mioashu3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + picture
+                        .des2 +
+                        '</div></div></div>';
+                }
+                $("div[class='tt2']").append(li);
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+    <!-- 首页点击搜索按钮后将输入框的数据传到session中，并跳转到搜索结果页 -->
+    <script type="text/javascript">
+        $("#btnsec").click(function() {
+            var key = $("#search").val();
+
+            sessionStorage.setItem("value", key);
+            if (key != null || key != "") {
+
+                window.location.href = "search.html";
+            }
+        })
+    </script>
+
+    <!-- 注销 -->
+    <script type="text/javascript">
+        $("#zhuxiao").click(function() {
+
+            sessionStorage.removeItem("userid");
+            window.location.href = "login.html";
+
+        })
+    </script>
+
+
+    <!-- 判断登录状态   根据登录状态添加-->
+    <script type="text/javascript">
+        function a() {
+
+            var id = sessionStorage.getItem("userid");
+            // alert(id);
+            if (id != null) {
+
+                $.ajax({
+                    url: "http://localhost:8080/user/getname",
+                    // data: "id=" + $.cookie('userid'),
+                    data: aa(),
+                    type: "post",
+                    // datatype:"json",
+                    success: function(username) {
+                        // alert("后台返回用户名为" + username);
+                        //删掉了style="color: blue;"
+                        getUserIcon();
+                        var li = '<a href="#" >' + username + '</a>';
+                        $("li[class='aaa']").append(li);
+                    }
+                })
+
+                function aa() {
+
+                    var v = "id=" + sessionStorage.getItem("userid");
+                    // sessionStorage.removeItem("value");
+                    console.log(v);
+                    return v;
+                }
+
+            } else {
+                //删掉了style="color: blue;"
+                var li = '<a href="login.html" >' + '登录/注册 ' + '</a>';
+                $("li[class='aaa']").append(li);
+
+            }
+        }
+    </script>
+
+    <!-- 获取当前登录用户的头像 -->
+    <script>
+        function getUserIcon() {
+            $.ajax({
+                url: "http://localhost:8080/user/getTouXiangById",
+                data: bb(),
+                success: function(pic) {
+
+                    var li = '';
+                    if (pic == "" || pic == null) {
+                        li += '<img id="a"  src="images/默认头像.webp" style="width: 40px;height: 40px;border-radius: 20px;">';
+
+                    } else {
+                        li += '<img id="a" style="width: 40px;height: 40px;border-radius: 20px;" src="' + pic + '">';
+
+                    }
+                    $("li[id='touxiang']").append(li);
+                }
+            });
+        }
+
+        function bb() {
+            var v = "id=" + sessionStorage.getItem("userid");
+            console.log(v);
+            return v;
+        }
+    </script>
+
+
+
+    <!-- 监听头像 -->
+    <script>
+        $(document).ready(function() {
+            $("#touxiang").click(function() {
+                $("#tab").toggle();
+            });
+        });
+    </script>
+    <!--点击图片存session-->
+    <script>
+        $(document).on("click", ".p1", function() {
+            var courseid = parseInt($(this).attr("data-courseid"));
+
+            window.location.href = "details.html?courseid=" + courseid;
+        })
+    </script>
+
+
+
+</body>
+
+</html>

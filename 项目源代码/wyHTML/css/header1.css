@@ -1,0 +1,98 @@
+/* .container-fluid {
+    height: 106px;
+}
+
+.navbar-header {
+    padding-left: 18px;
+    margin-top: 7px;
+}
+
+.navbar-collapse {
+    margin-top: 18px;
+}
+
+.form-control {
+	border-radius: 20px;
+    width: 40%;
+    height: 40px;
+} */
+
+
+/* .formfir {
+    margin-top: 30px;
+    margin: 30px auto;
+} */
+
+
+/* 
+.navbar-left input {
+    width: 200px;
+}
+
+#btnsec {
+    width: 80px;
+    height: 40px;
+    border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+ */
+
+
+/* 新增 */
+
+.navbar-default {
+    margin: 0 auto;
+}
+
+
+/*2020年6月22日15:02:54
+    增加 颜色*/
+
+.container-fluid {
+    height: 106px;
+    background-color: rgb(9, 2, 34);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: lightgreen;
+}
+
+.navbar-header {
+    padding-left: 18px;
+    margin-top: 7px;
+}
+
+.navbar-collapse {
+    margin-top: 18px;
+}
+
+.form-control {
+    border-radius: 20px;
+    width: 40%;
+    height: 40px;
+}
+
+
+/* .formfir {
+    margin-top: 30px;
+    margin: 30px auto;
+} */
+
+.navbar-left input {
+    width: 200px;
+}
+
+#btnsec {
+    width: 80px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav.navbar.navbar-default {
+    margin: 0 auto;
+}

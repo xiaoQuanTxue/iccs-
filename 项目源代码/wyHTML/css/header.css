@@ -1,0 +1,60 @@
+.container-fluid {
+    font-size: 14px;
+    background-color: rgb(9, 2, 34);
+    height: 60px;
+    width: 100%;
+    background: url(//s.stu.126.net/res/images/bg/bg_nav_rep.png) repeat-x;
+}
+
+.container-fluid a {
+    color: white;
+}
+
+.navf {
+    margin-top: 7px;
+}
+
+#in,
+#btnsec {
+    background-color: rgb(58, 52, 52);
+}
+
+#btnsec {
+    outline: none;
+    color: rgb(124, 119, 119);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: lightgreen;
+}
+
+#touxiang {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#tab a {
+    color: black;
+}
+
+#tab a:hover {
+    text-decoration: none;
+}
+
+#tab td:hover {
+    background: #e4e4e4;
+}
+
+#tab {
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    top: 63px;
+    right: 25px;
+    z-index: 10000;
+    cursor: pointer;
+}

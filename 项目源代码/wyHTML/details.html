@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>详情页</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/detailz.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Brand" src="img/navbrand1.png" width="127" height="29" id="brand">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navf" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程分类<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">专业</a></li>
+                    <li><a href="#">关注领福利</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+
+                        <input type="text" class="form-control " id="in" aria-label="...">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default " type="submit" id="btnsec">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                        </div>
+                    </div>
+
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="back-manage"><a href="#">管理后台</a></li>
+                    <li><a href="mystudy.html">我的学习</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+                    <li><a href="cart.html"><span class="glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    <li id="logging"><a href="login.html">登录/注册</a></li>
+                    <li>&nbsp;&nbsp;</li>
+
+
+                    <li class="aaa">
+
+                    </li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li id="touxiang">
+
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="detail-box">
+        <div class="detail-box-content">
+            <div class="titlebar">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">首页</a></li>
+
+                    <li class="active">详情</li>
+                </ol>
+            </div>
+            <div class="detail-info">
+                <div class="detail-info-left">
+                    <img class="img-icon" width="420px" height="250px" src="https://edu-image.nosdn.127.net/097a6c8b4383430083356493cf67b37e.jpg?imageView&quality=100&crop=0_0_439_247&thumbnail=450y250" />
+
+                </div>
+                <div class="detail-info-right">
+                    <div class="detail-info-right-top">
+
+                        <h2 class="coursename">和秋叶一起学Excel</h2>
+                        <div class="down-coursename">
+                            <p>
+                                <sapn class="subscribenum">0</sapn>人学过
+                            </p>
+
+                            <div>机构/讲师：<span class="institution">幻方秋叶PPT</span></div>
+                        </div>
+
+
+                        <div>
+                            <span class="price">￥<span class="price-num">0</span></span>
+                        </div>
+                    </div>
+                    <div class="detail-info-right-bottom">
+                        <div class="ditail-buttons">
+                            <a class="join-button "><span>立即参加</span></a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-buttons">
+                <span class="selected first">介绍</span>
+                <span class="second">目录</span>
+
+            </div>
+            <div class="details-commend">
+                <div class="details-commend-left">
+                    <div class="commend-people">
+                        <h1 class="commend-people-title">
+                            适用人群
+                        </h1>
+                        <p class="commend-people-content">
+                            想用Python快速达成信息搜集，解脱重复、繁琐的工作，或者想通过Python实现非常cool的DIY的朋友
+                        </p>
+                    </div>
+                    <div class="commend-content">
+                        【中国加油！世界加油！】<br> *****【全民战疫,独家附赠】*****
+                        <br> 【远程办公】【手机随处操控】【Window与Mac跨平台办公】与【自动办公】结合等内容
+                        <br><br> *****【持续更新,2020全面升级】*****
+                        <br> 0.独家微软官方力荐JS&nbsp;API自动办公混合开发实战
+                        <br> 1.系统化Python爬虫实战项目
+                        <br> 2.VBA零基础到系统进阶+Python+VBA+Windows原生接口混合开发
+                        <br> 3.Excel,PPT,Word,爬虫,自动邮件发送结合
+                        <br> 4.模块化思想,代码可灵活组合,构建适合自己的定制化项目
+                        <br><br> 【干货多多,细致讲解,现场逐行讲解,零基础也可跟着视频操作】
+                        <br> 【1】个课程包含同类【5】-【10】个课程知识点与项目
+                        <br> 【一课巩固Python基础+进阶+各类实战、实用操作】
+                        <br><br><br> 【“法乎其上,得乎其中;法乎其中,得乎其下”
+                        <br> ——《论语》】
+                        <br> 乐学偶得特聘国际专家团队教研，直接提升您的工作与学习效率，让您少走弯路
+                        <br><br> 内容【前沿】【独家】【稀缺】,不少职业VBA/Python讲师也在悄悄学习哦~嘘~*\(&nbsp;^&nbsp;v&nbsp;^&nbsp;)/*&nbsp;GO
+                        <br><br> 例:【自动办公】部分，从简单VBA+Python现成库相互调用开始,从零基础轻松入门,逐步深入到自动办公操作流程本质与精髓（如世界棘手的WinAPI,COM,OLE,对象模型）与混合开发(HybridDev)等独家教研前沿技术
+                        <br><br> 跟【专业】的人,学【专业】事,欢迎大家加入哦~
+                    </div>
+                    <div class="commend-imgs">
+                        <!-- <img src="https://edu-image.nosdn.127.net/7e725a773a7e4b8d952ff52b0fd3324d.jpg?imageView&quality=100&type=webp" width="880px"> -->
+                        <img src="img/qiuyeexcel1.webp">
+                        <img src="img/qiuyeexcel2.webp">
+                        <img src="img/qiuyeexcel3.webp">
+                        <img src="img/qiuyeexcel4.webp">
+                        <img src="img/qiuyeexcel5.webp">
+                    </div>
+                </div>
+                <div class="details-commend-right">
+                    <div class="institution-icon">
+
+                        <img src="https://edu-image.nosdn.127.net/4972afc1-b324-457d-94c9-715e0264181e.jpg?imageView&quality=100&thumbnail=75y75">
+
+
+                    </div>
+                    <div class="institution-commend">
+                        乐学偶得致力于前沿Fintech(金融科技)，Data Science(数据科学)，IT(信息科技)，企业高级管理必备CFA，FRM，CIA等高端企业管理商务知识，多语种文化艺术信息的分享及咨询。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="end-footer">
+        <div class="footer-box">
+            <div class="footer-box-left">
+                <div class="footer-box-left-first m-20">
+                    <span>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。</span>
+                </div>
+                <div class="footer-box-left-second f-fl">
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=1">关于我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=2">联系我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=4">帮助中心</a></div>
+                    <div class="second-roww m-20"><a href="https://www.icourse163.org/">中国大学mooc</a></div>
+                    <div class="second-rowww m-20"><a href="https://geek.163.com/?utm_source=study.163.com&utm_medium=web_bottombanner&utm_campaign=business&utm_content=qxq20180720">网易卡撘编程</a></div>
+                    <div class="second-row m-20"><a href="https://codecombat.163.com/">极客战记</a></div>
+                </div>
+                <div class="footer-box-left-third">
+                    <span>©1997-2020&nbsp&nbsp网易公司&nbsp &nbsp版权所有粤B2-20090191-18 &nbsp&nbsp工业和信息化部备案管理系统网站</span>
+                </div>
+            </div>
+            <div class="footter-box-right">
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo1"></a>
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo2"></a>
+                <div class="m-yktfoot_share">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <table style="font-size: 12px; width: 142px; display: none; " class="table" id="tab">
+        <tr>
+            <td><b>正在使用网易账号登录</b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="shezhi.html">设置</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="order.html">我的订单</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a id="zhuxiao">注销</a>
+            </td>
+        </tr>
+    </table>
+    <script src="js/navigation.js" type="text/javascript"></script>
+    <script>
+        function getCourseId() {
+            var str = location.search;
+            if (str.indexOf("?") != -1) {
+                str = str.substr(1);
+                var strs = str.split("=");
+                str = strs[1];
+            }
+            return parseInt(str);
+        }
+        $.ajax({
+            url: 'http://localhost:8080/coursedetails/display',
+            data: 'courseid=' + getCourseId(),
+            dataType: 'json',
+            success: function(msg) {
+                $(".img-icon").prop("src", msg.viewsrc);
+                $(".coursename").text(msg.coursename);
+                $(".subscribenum").text(msg.subscribenum);
+                $(".institution").text(msg.institution.inname);
+
+                if (msg.courseprice == 0) {
+                    $(".price").replaceWith('<span class="price">免费</span>');
+                } else {
+                    $(".price-num").text(msg.courseprice);
+                }
+                if (msg.courseprice != 0) {
+                    $(".ditail-buttons").append('<a class="nofee-watch"><span>免费观看</span></a><a class="join-cart"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>加入购物车</a>');
+                }
+                $.ajax({
+                    url: 'http://localhost:8080/myStudy/validBuyCourse',
+                    data: 'courseid=' + getCourseId() + "&userid=" + sessionStorage.getItem("userid"),
+                    dataType: 'text',
+                    success: function(msg) {
+                        if (msg.toString() == 'true') {
+                            $(".ditail-buttons").replaceWith('<div class="ditail-buttons"><a class="study-button"><span>立即学习</span></a></div>');
+                            $(".price").remove();
+                        }
+
+                    }
+                })
+                $(".commend-people-content").text(msg.courseDetails.people);
+                $(".commend-content").html(msg.courseDetails.coursedescribe);
+                var v1 = '<div class="commend-imgs">';
+                var v2 = '</div>';
+                var img = '';
+                var imgs = msg.courseDetails.courseDetailsIcons;
+
+                for (var i = 0; i < imgs.length; i++) {
+                    img += '<img src="' + imgs[i].coursedetailsiconsrc + '">';
+                }
+                var result = v1 + img + v2;
+                $(".commend-imgs").replaceWith(result);
+                $(".institution-icon img").prop("src", msg.institution.iconsrc);
+                $(".institution-commend").text(msg.institution.describe);
+
+            }
+        })
+        $(".second").click(function() {
+                window.location.href = "details2.html?courseid=" + getCourseId();
+            })
+            //点击立即学习前往我的学习
+        $(document).on("click", ".study-button", function() {
+
+                window.location.href = "mystudy.html";
+            })
+            //点击立即加入按钮,如果免费直接加入我的学习,如果没有生成订单购买
+        $(document).on("click", ".join-button", function() {
+                if ($(".price").text() == '免费') {
+                    $.ajax({
+                        url: "http://localhost:8080/myStudy/addCourseToStudy",
+                        data: 'courseid=' + getCourseId() + '&userid=' + sessionStorage.getItem("userid"),
+                        dataType: 'text',
+                        success: function(msg) {
+                            if (msg.toString() == '加入成功') {
+                                alert(msg);
+                                window.location.href = "mystudy.html";
+                            }
+                        }
+                    })
+                }
+                $.ajax({
+                    url: "http://localhost:8080/Order/addOneOrder",
+                    data: 'courseid=' + getCourseId() + '&userid=' + parseInt(sessionStorage.getItem("userid")) + '&totalPrice=' + parseInt($(".price-num").text()),
+                    dataType: 'text',
+                    success: function(msg) {
+                        if (msg.toString() == 'true') {
+                            alert(msg);
+                            window.location.href = "order.html";
+                        }
+                    }
+                })
+            })
+            //点击免费观看直接收看第一集
+        $(document).on("click", ".nofee-watch", function() {
+                var sectionid = $(this).attr("data-sectionid");
+                window.location.href = "player.html?sectionid=" + sectionid;
+            })
+            //添加购物车
+        $(document).on("click", ".join-cart", function() {
+            $.ajax({
+                url: 'http://localhost:8080/cart/addOne',
+                data: 'userid=' + sessionStorage.getItem("userid") + "&courseid=" + getCourseId(),
+                dataType: 'text',
+                success: function(msg) {
+                    alert(msg);
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

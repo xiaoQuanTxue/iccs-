@@ -1,0 +1,29 @@
+
+.bottom {
+	margin-top: 80px;
+	width: 100%;
+	height:200px ;
+	background-color: black; 
+}
+.bottomleft {
+	float: left;
+	width: 50%;
+	/* background-color: black; */
+	height: 100px;
+	margin: 0 auto;
+	padding: 50px 50px;
+	color: #FFFFFF;
+}
+.bottomright {
+	float: right;
+	/* background-color: black; */
+	height: 100px;
+	width: 34%;
+	margin: 0 auto;
+	padding: 50px 50px;
+	color: #FFFFFF;
+}
+.bottomleft a{color: #FFFFFF;text-decoration: none;}
+.bottomleft	a:hover{color: #FFFFFF;text-decoration: underline;}
+.bottomleft	a:visited{color: #FFFFFF;}
+.bottomright img{width: 100px;height: 30px;}

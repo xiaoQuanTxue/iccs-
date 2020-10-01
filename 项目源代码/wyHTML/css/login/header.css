@@ -1,0 +1,35 @@
+.container-fluid {
+    height: 106px;
+}
+
+.navbar-header {
+    padding-left: 18px;
+    margin-top: 7px;
+}
+
+.navbar-collapse {
+    margin-top: 18px;
+}
+
+.form-control {
+    border-radius: 20px;
+    width: 40%;
+    height: 40px;
+}
+
+
+/* .formfir {
+    margin-top: 30px;
+    margin: 30px auto;
+} */
+
+.navbar-left input {
+    width: 200px;
+}
+
+#btnsec {
+    width: 80px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

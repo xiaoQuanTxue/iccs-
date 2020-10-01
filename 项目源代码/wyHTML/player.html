@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>播放器</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ch05.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="videoform">
+
+        <ol class="breadcrumb">
+            <li><a href="#">返回课程</a></li>
+            <li><a href="#">秋叶老师带你一起学</a></li>
+            <li class="active">第一节</li>
+        </ol>
+        <div class="player">
+            <video id="videosrc" src="" autoplay></video>
+            <!-- <div class="videoaaa">
+					<video src="./video/java.wmv">
+				</div>	 -->
+            <div class="controls">
+                <a href="javascript:;" class="switch icon-play3"></a>
+                <a href="javascript:;" class="expand icon-enlarge2"></a>
+                <div class="progress">
+                    <div class="bar"></div>
+                    <!-- <div class="loaded"></div> -->
+                    <div class="elapse"></div>
+                </div>
+                <div class="time">
+                    <span class="currentTime">00:00:00</span> \
+                    <span class="totalTime">00:00:00</span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function getVideoUrl() {
+                var str = location.search;
+                if (str.indexOf("?") != -1) {
+                    str = str.substr(1);
+                    var strs = str.split("=");
+                    str = strs[1];
+                }
+                var sectionid = parseInt(str);
+                var url1 = '';
+                $.ajax({
+                    url: 'http://localhost:8080/section/getUrl',
+                    data: 'sectionid=' + sectionid,
+                    dataType: 'text',
+                    success: function(msg) {
+
+                        url1 = msg.toString();
+
+                        $("video").attr("src", url1);
+                    }
+                })
+
+
+            }
+            getVideoUrl();
+            // alert(getVideoUrl());
+
+            // var videoSrc = getVideoUrl(); //新的视频播放地址
+            // console.log(videoSrc);
+            // document.getElementById("videosrc").src = videoSrc;
+
+            // 获取播放器
+            var video = document.querySelector("video");
+            // 获取播放或者暂停
+            var switchs = document.querySelector(".switch");
+
+            // 实现视频的播放和暂停的切换
+            switchs.onclick = function() {
+                if (video.paused) {
+                    video.play();
+                    switchs.classList.remove("icon-play3");
+                    switchs.classList.add("icon-pause2");
+                } else {
+                    video.pause()
+                    switchs.classList.remove("icon-pause2");
+                    switchs.classList.add("icon-play3");
+                }
+            }
+
+            // 设置全屏
+            var expand = document.querySelector(".expand");
+            expand.onclick = function() {
+                // 全屏，不同浏览器不同的前缀
+                if (video.requestFullScreen) {
+                    video.requestFullScreen();
+                } else if (video.webkitRequestFullScreen) {
+                    video.webkitRequestFullScreen()
+                } else if (video.mozRequestFullScreen) {
+                    video.mozRequestFullScreen()
+                } else if (video.msRequestFullscreen) {
+                    video.msRequestFullscreen()
+                }
+            }
+
+            // 实现播放逻辑，当视频播放时触发
+            video.oncanplay = function() {
+                video.style.display = "block";
+                // 获取视频的总时长
+                var total = video.duration;
+                // console.log(total);//获取到了小数
+                var result = getResult(total)
+
+                document.querySelector(".totalTime").innerHTML = result;
+            }
+
+            // 通过总时长计算时分秒
+            function getResult(time) {
+                var hour = Math.floor(time / 3600);
+
+                // 补0操作
+                hour = hour < 10 ? "0" + hour : hour;
+                var minute = Math.floor(time % 3600 / 60);
+                minute = minute < 10 ? "0" + minute : minute;
+                var second = Math.floor(time % 60)
+                second = second < 10 ? "0" + second : second;
+
+                // 返回计算结果
+                return hour + ":" + minute + ":" + second;
+            }
+
+            // 视频在播放过程中的事件
+            video.ontimeupdate = function() {
+                // 获取视频播放的时间
+                var current = video.currentTime;
+                // console.log(current);
+                var result = getResult(current);
+                document.querySelector(".currentTime").innerHTML = result;
+
+                // 设置当前播放进度条的样式
+                var percent = current / video.duration * 100 + "%";
+                document.querySelector(".elapse").style.width = percent;
+            }
+
+            // 实现视频的跳转
+            document.querySelector(".bar").onclick = function(e) {
+                // console.log(e);
+                // 获取当前点击位置相对于父元素的left值
+                var offset = e.offsetX;
+                // 计算偏移值，相对于父元素宽度的比例
+                var percent = offset / document.querySelector(".bar").offsetWidth;
+                // 计算当前位置对应视频时间的进度值
+                var current = percent * video.duration;
+                // 设置currentTime
+                video.currentTime = current;
+            }
+
+            // 播放完成后---重置
+            video.onended = function() {
+                video.currentTime = 0;
+                switchs.classList.remove("icon-pause2");
+                switchs.classList.add("icon-play3");
+            }
+
+
+
+            // var bbbb=window.location.href;
+            //  var cccc = bbbb.split("?")[1];
+            //  var value = cccc.split("=")[1];
+
+            // console.log(bbbb);
+            // console.log(cccc);
+            // console.log(value);
+
+            // var aaa = '<video src="'+value+'"></video>';
+            // $("div[class='videoaaa']").append(aaa);
+
+            // console.log(aaa);
+        </script>
+
+    </div>
+</body>
+
+</html>

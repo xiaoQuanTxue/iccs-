@@ -1,0 +1,79 @@
+.end-footer {
+    height: 184px;
+    width: 100%;
+    background-color: #474443;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    height: 184px;
+    width: 1205px;
+    margin: 0 auto;
+}
+
+
+/*hah*/
+
+.footer-box-left-first,
+.footer-box-left-second a {
+    color: #ffffff;
+}
+
+.footer-box-left-third {
+    color: #999999;
+}
+
+.footer-box-left {
+    margin-top: 17px;
+    width: 602px;
+    height: 149px;
+    padding: 30px 0;
+}
+
+.second-row {
+    width: 56px;
+    margin-right: 17px;
+}
+
+.second-roww {
+    width: 99px;
+    margin-right: 17px;
+}
+
+.second-rowww {
+    width: 84px;
+    margin-right: 17px;
+}
+
+.footer-box-left-second {
+    width: 602px;
+    display: flex;
+}
+
+.m-20 {
+    margin-bottom: 15px;
+}
+
+.footter-box-right {
+    width: 242px;
+    height: 184px;
+    float: right;
+    padding: 43px 0;
+}
+
+#m-yktfoot_mlogo1,
+#m-yktfoot_mlogo2 {
+    display: block;
+    float: left;
+    width: 111px;
+    height: 32px;
+    background: url(//s.stu.126.net/res/images/ui/download_icon.png) no-repeat 0 0;
+    margin-left: 10px;
+    padding-top: 15px;
+    border: #474443;
+}
+
+.footer-box-left-second a:hover {
+    color: lightgreen;
+}

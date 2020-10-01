@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        订单
+    </title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/order2.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+</head>
+
+<body style="padding-top: 80px;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Brand" src="img/navbrand1.png" width="127" height="29" id="brand">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navf" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程分类<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">专业</a></li>
+                    <li><a href="#">关注领福利</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+
+                        <input type="text" class="form-control " id="in" aria-label="...">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default " type="submit" id="btnsec">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                        </div>
+                    </div>
+
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="back-manage"><a href="#">管理后台</a></li>
+                    <li><a href="mystudy.html">我的学习</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+                    <li><a href="cart.html"><span class="glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    <li id="logging"><a href="login.html">登录/注册</a></li>
+                    <li>&nbsp;&nbsp;</li>
+
+
+                    <li class="aaa">
+
+                    </li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li id="touxiang">
+
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="orderheader">
+        <div class="orderheader-box">
+            <div class="orderheader-title">
+                <h3>我的订单</h3>
+            </div>
+            <div class="orderheader-buttons">
+                <a class="f-fl butt current all">全部订单</a>
+                <a class="f-fl butt wait">待支付</a>
+                <a class="f-fl butt finish">交易成功</a>
+                <a class="f-fl butt closed">交易关闭</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="orderbody">
+        <div class="orderbody-box">
+            <div class="orderbody-box-header">
+                <span class="header-item first">订单信息</span>
+                <span class="header-item">单价(元)</span>
+                <span class="header-item">实付金额(元)</span>
+                <span class="header-item">课程操作</span>
+                <span class="header-item">交易状态</span>
+                <span class="header-item last">交易操作</span>
+            </div>
+            <div class="orderbody-box-contents">
+                <!-- <div class="box-content">
+                    <div class="content-title">
+                        <span class="orderTime gray">2020-06-19 15:57</span>
+                        <span class="gray">订单号：<span class="orderNum">1219498991</span></span>
+                    </div>
+                    <div class="content-body">
+                        <div class="box-content-left">
+                            <div class="single-order f-fl">
+                                <div class="single-title" data-courseid="1">
+                                    <span class="gray">子订单号：<span class="sub-ordernum">1219498992</span></span>
+                                </div>
+                                <div class="single-body">
+                                    <div class="ordername">
+                                        <h5 class="coursename">前端工程师零基础转行就业入门班</h5>
+                                        <p class="validTime red">永久可看</p>
+                                    </div>
+                                    <div class="f-fl">
+                                        <p class="c-price">56</p>
+                                    </div>
+                                    <div class="f-fl dada">
+                                        <div class="pay-price">56</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content-right">
+                            <span class="state">交易关闭</span>
+                            <div class="btns">
+                                <!-- <button class="btn btn-info buttt" type="submit">重新购买</button> -->
+                <!--           <span class="butt1">去支付</span>
+                                <p class="cancel">取消订单</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>-->
+
+
+                <!--单独第二个-->
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <footer class="end-footer">
+        <div class="footer-box">
+            <div class="footer-box-left">
+                <div class="footer-box-left-first m-20">
+                    <span>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。</span>
+                </div>
+                <div class="footer-box-left-second f-fl">
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=1">关于我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=2">联系我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=4">帮助中心</a></div>
+                    <div class="second-roww m-20"><a href="https://www.icourse163.org/">中国大学mooc</a></div>
+                    <div class="second-rowww m-20"><a href="https://geek.163.com/?utm_source=study.163.com&utm_medium=web_bottombanner&utm_campaign=business&utm_content=qxq20180720">网易卡撘编程</a></div>
+                    <div class="second-row m-20"><a href="https://codecombat.163.com/">极客战记</a></div>
+                </div>
+                <div class="footer-box-left-third">
+                    <span>©1997-2020&nbsp&nbsp网易公司&nbsp &nbsp版权所有粤B2-20090191-18 &nbsp&nbsp工业和信息化部备案管理系统网站</span>
+                </div>
+            </div>
+            <div class="footter-box-right">
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo1"></a>
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo2"></a>
+                <div class="m-yktfoot_share">
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <table style="font-size: 12px; width: 142px; display: none; " class="table" id="tab">
+        <tr>
+            <td><b>正在使用网易账号登录</b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="shezhi.html">设置</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="order.html">我的订单</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a id="zhuxiao">注销</a>
+            </td>
+        </tr>
+    </table>
+    <script src="js/navigation.js" type="text/javascript"></script>
+    <script>
+        $.ajax({
+                url: "http://localhost:8080/Order/displayOrders",
+                type: "get",
+                data: "userid=" + sessionStorage.getItem("userid"),
+                dataType: "json",
+                success: function(msg) {
+
+                    // alert(msg.length);
+                    // $(".box-content").append(bond(msg));
+                    var str = bond(msg);
+
+                    dis(str);
+                }
+            })
+            // $(document).on("click", ".cancel2", function() {
+            //         alert($(this).parents(".content-body").prev().find(".orderNum").text());
+            //     })
+        $(document).on("click", ".cancel2", function() {
+            $.ajax({
+                url: 'http://localhost:8080/Order/cancelOrder',
+                data: 'orderNum=' + $(this).parents(".content-body").prev().find(".orderNum").text(),
+                dataType: "text",
+                success: function(msg) {
+                    alert(msg);
+                }
+            })
+
+            $(this).parents(".box-content-right").replaceWith('<div class="box-content-right"><span class="state">交易关闭</span><div class="btns"><span class="butt2">重新购买</span><p class="cancel">删除订单</p></div></div>');
+
+        })
+
+        $(document).on("click", ".cancel", function() {
+            var object = $(this);
+            $.ajax({
+                url: 'http://localhost:8080/Order/deleteOrder',
+                data: 'orderNum=' + object.parents(".content-body").prev().find(".orderNum").text(),
+                dataType: "json",
+                success: function(msg) {
+                    alert(msg);
+                    if (msg.id == -1) {
+                        alert("删除失败");
+                    }
+                    object.parents(".box-content").remove();
+                }
+            })
+
+
+        })
+        $(document).on("click", ".butt2", function() {
+
+            var b = $(this).parents(".content-body").find(".box-content-left").children(".single-order").children(".single-title");
+
+            var coursesid = new Array();
+            for (var i = 0; i < b.length; i++) {
+                coursesid[i] = parseInt(b[i].getAttribute("data-courseid"));
+            }
+            var cart = {
+                userid: sessionStorage.getItem("userid"),
+
+                coursesid: coursesid
+            }
+            console.log(JSON.stringify(cart));
+            $.ajax({
+                url: 'http://localhost:8080/cart/add',
+                dataType: 'text',
+                type: "post",
+                contentType: "application/json;charset=utf-8",
+                data: JSON.stringify(cart),
+                success: function(msg) {
+                    window.location.href = "/cart.html";
+                }
+            })
+        })
+        $(document).on("click", ".closed", function() {
+            $(".orderheader-buttons").replaceWith('<div class="orderheader-buttons"><a class="f-fl butt  all">全部订单</a><a class="f-fl butt wait">待支付</a><a class="f-fl butt finish">交易成功</a><a class="f-fl butt closed current">交易关闭</a></div>');
+            $.ajax({
+                url: 'http://localhost:8080/Order/displayOrdersByState',
+                data: 'userid=' + sessionStorage.getItem("userid") + '&state=交易关闭',
+                dataType: 'json',
+                success: function(msg) {
+                    var str = bond(msg);
+
+
+
+                    dis(str);
+                }
+
+            })
+
+        })
+        $(document).on("click", ".wait", function() {
+            $(".orderheader-buttons").replaceWith('<div class="orderheader-buttons"><a class="f-fl butt  all">全部订单</a><a class="f-fl butt current wait">待支付</a><a class="f-fl butt finish">交易成功</a><a class="f-fl butt closed ">交易关闭</a></div>');
+            $.ajax({
+                url: 'http://localhost:8080/Order/displayOrdersByState',
+                data: 'userid=' + sessionStorage.getItem("userid") + '&state=待支付',
+                dataType: 'json',
+                success: function(msg) {
+                    var str = bond(msg);
+
+                    dis(str);
+                }
+
+            })
+        })
+        $(document).on("click", ".all", function() {
+            $(".orderheader-buttons").replaceWith('<div class="orderheader-buttons"><a class="f-fl butt  all current">全部订单</a><a class="f-fl butt  wait">待支付</a><a class="f-fl butt finish">交易成功</a><a class="f-fl butt closed ">交易关闭</a></div>');
+            $.ajax({
+                url: "http://localhost:8080/Order/displayOrders",
+                type: "get",
+                data: "userid=" + sessionStorage.getItem("userid"),
+                dataType: "json",
+                success: function(msg) {
+                    // alert(msg.length);
+                    var str = bond(msg);
+
+                    dis(str);
+                }
+            })
+        })
+        $(document).on("click", ".finish", function() {
+            $(".orderheader-buttons").replaceWith('<div class="orderheader-buttons"><a class="f-fl butt  all">全部订单</a><a class="f-fl butt wait">待支付</a><a class="f-fl butt current finish">交易成功</a><a class="f-fl butt closed ">交易关闭</a></div>');
+            $.ajax({
+                url: 'http://localhost:8080/Order/displayOrdersByState',
+                data: 'userid=' + sessionStorage.getItem("userid") + '&state=交易成功',
+                dataType: 'json',
+                success: function(msg) {
+                    var str = bond(msg);
+
+                    dis(str);
+                }
+
+            })
+        })
+
+        $(document).on("click", ".butt1", function() {
+            //  alert($(this).parents(".box-content")[0]);
+            window.location.href = "payment.html?" + "orderid=" + $(this).parents(".box-content")[0].getAttribute("data-orderid");
+        })
+
+        //连接字符串函数
+        function bond(msg) {
+            var result = '';
+            for (var i = 0; i < msg.length; i++) {
+                // alert(msg[i].createtime.dataType);
+                var v1 = '<div class="box-content" data-orderid="' + msg[i].id + '"><div class="content-title"><span class="orderTime gray">' + msg[i].createtime + '</span><span class="gray">订单号：<span class="orderNum">' + msg[i].ordernum + '</span></span></div><div class="content-body"><div class="box-content-left">';
+                var v2 = '';
+                for (var j = 0; j < msg[i].orderItemList.length; j++) {
+                    v2 += '<div class="single-order f-fl"><div class="single-title" data-courseid="' + msg[i].orderItemList[j].course.id + '"><span class="gray">子订单号：<span class="sub-ordernum">' + msg[i].orderItemList[j].secondordernum + '</span></span></div><div class="single-body"><div class="ordername"><h5 class="coursename">' + msg[i].orderItemList[j].course.coursename + '</h5><p class="validTime red">' + msg[i].orderItemList[j].course.validtime + '</p></div><div class="f-fl"><p class="c-price">' + msg[i].orderItemList[j].course.courseprice + '</p></div><div class="f-fl dada"><div class="pay-price">' + msg[i].orderItemList[j].course.courseprice + '</div></div></div></div>';
+
+                }
+                var classname = '';
+                var btname = '';
+                var btname2 = '';
+                var classname2 = '';
+                if (msg[i].state == "待支付") {
+                    btname2 = "去支付";
+                    classname = "butt1";
+                    btname = "取消订单";
+                    classname2 = "cancel2";
+                } else if (msg[i].state == "交易关闭") {
+                    btname2 = "重新购买";
+                    classname = "butt2";
+                    btname = "删除订单";
+                    classname2 = 'cancel';
+                }
+                var v3 = '</div><div class="box-content-right"><span class="state">' + msg[i].state + '</span><div class="btns"><span class="' + classname + '">' + btname2 + '</span><p class="' + classname2 + '">' + btname + '</p></div></div></div></div>';
+                var v = v1 + v2 + v3;
+                result += v;
+
+            }
+            return result;
+        }
+        //切换display
+        '<div class="orderbody-box"><div class="orderbody-box-header"><span class="header-item first">订单信息</span><span class="header-item">单价(元)</span><span class="header-item">实付金额(元)</span><span class="header-item">课程操作</span><span class="header-item">交易状态</span><span class="header-item last">交易操作</span></div>'
+
+        function dis(msg) {
+
+            var result = '<div class="orderbody"><div class="orderbody-box"><div class="orderbody-box-header"><span class="header-item first">订单信息</span><span class="header-item">单价(元)</span><span class="header-item">实付金额(元)</span><span class="header-item">课程操作</span><span class="header-item">交易状态</span><span class="header-item last">交易操作</span></div><div class="orderbody-box-contents">' + msg + '</div></div></div></div>';
+            if (msg === undefined || msg === '') {
+                $(".orderbody").replaceWith('<div class="orderbody"><div class="empty-content"><div class="lettle"><p class="upon">暂时还没有该状态的订单</p><p class="down">去<a>全部课程</a>页面学习喜欢的课程吧~</p></div></div></div>');
+            } else if (msg !== undefined || msg !== '') {
+                $(".orderbody").replaceWith(result);
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

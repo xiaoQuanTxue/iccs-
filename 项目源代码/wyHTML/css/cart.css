@@ -1,0 +1,258 @@
+#brand {
+    margin-bottom: 7px;
+}
+
+.container-fluid {
+    font-size: 14px;
+    background-color: rgb(9, 2, 34);
+    height: 60px;
+}
+
+.container-fluid a {
+    color: white;
+}
+
+.navf {
+    margin-top: 7px;
+}
+
+#in,
+#btnsec {
+    background-color: rgb(58, 52, 52);
+}
+
+#btnsec {
+    outline: none;
+    color: rgb(124, 119, 119);
+}
+
+
+/*
+ 商品栏
+ */
+
+.b-30 {
+    height: 30px;
+}
+
+.b-20 {
+    height: 20px;
+}
+
+.b-10 {
+    height: 10px;
+}
+
+.out-box {
+    width: 100%;
+}
+
+
+/*之前百分之二十五*/
+
+.container-box {
+    width: 1205px;
+    margin: 0 auto;
+}
+
+.title-box {
+    width: 100%;
+    text-align: left;
+}
+
+.title-box h4 {
+    display: inline;
+    font-size: 17px;
+}
+
+.title-box span {
+    color: gray;
+}
+
+
+/*内容标题*/
+
+.item-box,
+.items {
+    width: 100%;
+}
+
+.items {
+    border: 1px solid #E4E4E4;
+    background-color: #f8f8f8;
+    height: 48px;
+}
+
+.items-title {
+    padding-top: 10px;
+    width: 98%;
+    margin: 0 auto;
+    height: 48px;
+}
+
+.select {
+    width: 22px;
+    float: left;
+}
+
+.img {
+    width: 120px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.img img {
+    width: 120px;
+}
+
+.time,
+.tname {
+    width: 30%;
+    text-align: center;
+    float: left;
+    padding-left: 5px;
+}
+
+.tname a {
+    color: #333333;
+}
+
+.tname {
+    text-align: left;
+}
+
+.price {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.delete {
+    width: 20px;
+    float: left;
+}
+
+.item {
+    width: 100%;
+}
+
+.item-title {
+    height: 46px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.courses {
+    background-color: #f8f8f8;
+    width: 100%;
+    border: 1px solid #E4E4E4;
+}
+
+.course {
+    width: 98%;
+    margin: 0 auto;
+    height: 112px;
+    padding-top: 20px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+
+.item-total {
+    width: 100%;
+    height: 41px;
+    background-color: #eeeeee;
+}
+
+.total-contain {
+    padding-top: 12px;
+    padding-right: 66px;
+    width: 98%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.total-tip {
+    position: relative;
+    right: 66px;
+}
+
+.end-box {
+    height: 62px;
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+.end-container {
+    height: 100%;
+}
+
+.end-container a {
+    float: right;
+}
+
+#totalprice {
+    color: red;
+    font-size: 22px;
+}
+
+#totalbutn {
+    float: right;
+    padding-top: 15px;
+    background-color: #cccccc;
+    border-radius: 0;
+    height: 62px;
+    width: 122px;
+    font-size: 20px;
+}
+
+#totalcontainer {
+    padding-top: 20px;
+}
+
+.end-left {
+    padding-right: 20px;
+    float: right;
+    width: 35%;
+    height: 62px;
+}
+
+.end-left p {
+    text-align: right;
+}
+
+#floor {
+    font-size: 12xp;
+    width: 100%;
+}
+
+
+/*为空时*/
+
+.empty-big {
+    width: 100%;
+    height: 480px;
+}
+
+.empty-content {
+    margin: 0 auto;
+    height: 480px;
+    width: 1205px;
+    background: url(//s.stu.126.net/res/images/ui/ui_empty.png) center 40px no-repeat;
+    padding: 260px 0 40px 0;
+}
+
+.lettle {
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    line-height: 2;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    color: #666;
+    margin: 10px auto;
+}
+
+.lettle a {
+    color: #10ae58;
+    text-decoration: none;
+}

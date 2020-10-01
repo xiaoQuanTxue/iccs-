@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>我的学习</title>
+    <link rel="stylesheet" href="css/login/myStudy.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default " style="margin-bottom:auto;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                   <span class="sr-only">Toggle navigation</span>
+	                   <span class="icon-bar"></span>
+	                   <span class="icon-bar"></span>
+	                   <span class="icon-bar"></span>
+	                 </button>
+                <a class="navbar-brand" href="/index.html">
+                    <img alt="Brand" src="img/navbrand1.png" width="127" height="29" id="brand">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navf" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">课程分类<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">专业</a></li>
+                    <li><a href="#">关注领福利</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+
+                        <input type="text" class="form-control " id="in" aria-label="...">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default " type="submit" id="btnsec">
+	                                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+	                             </button>
+                        </div>
+                    </div>
+
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="back-manage"><a href="#">管理后台</a></li>
+                    <li><a href="mystudy.html">我的学习</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+                    <li><a href="cart.html"><span class="glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                    <li id="logging"><a href="login.html">登录/注册</a></li>
+                    <li>&nbsp;&nbsp;</li>
+
+
+                    <li class="aaa">
+
+                    </li>
+                    <li>&nbsp;&nbsp;</li>
+                    <li id="touxiang">
+
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="on1">
+        <img src="img/touxiang2.jpg" class="tx">
+        <span class="biaoqian" style="top: opx; color:powderblue;"><strong>天赋如同自然花木，要用学习来修剪。</strong></span>
+    </div>
+
+    <div class="on2">
+        <!-- 两端对齐 -->
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="#">课程</a></li>
+            <li><a href="#">微专业</a></li>
+            <li><a href="#">训练营</a></li>
+            <li><a href="#">收藏夹</a></li>
+
+            <!-- 小试搜索框 -->
+            <li>
+                <div class="search001">
+                    <form class="search">
+                        <input type="text" placeholder="搜索我加入的课程">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- 修改1 -->
+    <div class="on3">
+        <div>
+            <ul>
+                <li class="li1" style="color: skyblue;">按时间学习排序</li>
+                <li class="li1">按加入时间排序</li>
+                <li class="li2">即将过期</li>
+                <li class="li2">付费&nbsp- </li>
+                <li class="li2" style="color: skyblue;">全部&nbsp- </li>
+            </ul>
+        </div>
+    </div>
+    <br/>
+    <!--  我的学习课程清单 -->
+    <div class="article1">
+        <div class="row"></div>
+    </div>
+    <footer class="end-footer">
+        <div class="footer-box">
+            <div class="footer-box-left">
+                <div class="footer-box-left-first m-20">
+                    <span>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。</span>
+                </div>
+                <div class="footer-box-left-second f-fl">
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=1">关于我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=2">联系我们</a></div>
+                    <div class="second-row m-20"><a href="https://study.163.com/about/aboutus.htm#/about?aboutType=4">帮助中心</a></div>
+                    <div class="second-roww m-20"><a href="https://www.icourse163.org/">中国大学mooc</a></div>
+                    <div class="second-rowww m-20"><a href="https://geek.163.com/?utm_source=study.163.com&utm_medium=web_bottombanner&utm_campaign=business&utm_content=qxq20180720">网易卡撘编程</a></div>
+                    <div class="second-row m-20"><a href="https://codecombat.163.com/">极客战记</a></div>
+                </div>
+                <div class="footer-box-left-third">
+                    <span>©1997-2020&nbsp&nbsp网易公司&nbsp &nbsp版权所有粤B2-20090191-18 &nbsp&nbsp工业和信息化部备案管理系统网站</span>
+                </div>
+            </div>
+            <div class="footter-box-right">
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo1"></a>
+                <a class="btn btn-default" role="button" id="m-yktfoot_mlogo2"></a>
+                <div class="m-yktfoot_share">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <table style="font-size: 12px; width: 142px; display: none; " class="table" id="tab">
+        <tr>
+            <td><b>正在使用网易账号登录</b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="shezhi.html">设置</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="order.html">我的订单</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a id="zhuxiao">注销</a>
+            </td>
+        </tr>
+    </table>
+    <script src="js/navigation.js" type="text/javascript"></script>
+    <script>
+        $.ajax({          
+            url:   "http://localhost:8080/myStudy/getMyStudyByUserId",
+                          data:   "userid=" + sessionStorage.getItem("userid"),
+                          type:   "get",
+                          success:   function(msg)  {              
+                var  li  =  '';              
+                for  (var  i  =  0;  i  <  msg.length;  i++)  {                   
+                    var  co  =  msg[i].course;                   
+                    li  +=  ' <div class="col-sm-6 col-md-4"> <div class="thumbnail"><img src="' + co.viewsrc + '" alt="加入学习的课"><div class="caption"><h5>' + co.coursename + '</h5><div style="text-align:center"><a href="#" class="btn btn-primary watchbtn" data-courseid="' + co.id + '" role="button" ;>开始学习</a></div></p> </div></div></div>';                    
+                }               
+                $("div[class='row']").append(li);               
+            }                
+        });
+
+        //新增观看视频
+        $(document).on("click", ".watchbtn", function() {
+            var courseid = parseInt($(this).attr("data-courseid"));
+
+            window.location.href = "details.html?courseid=" + courseid;
+        })
+    </script>
+</body>
+
+</html>
